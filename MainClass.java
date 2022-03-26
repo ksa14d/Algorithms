@@ -46,28 +46,9 @@ public class MainClass
         suvarna.setAge(57);
         suvarna.setName("suvarna");
         people.add(suvarna);
-
-        Person vikas = new Person();
-        vikas.setAddress("SFO");
-        vikas.setAge(37);
-        vikas.setName("vikas achalkar");
-        people.add(vikas);
-
-        Person akshatha = new Person();
-        akshatha.setAddress("SFO");
-        akshatha.setAge(1);
-        akshatha.setName("akshatha");
-        people.add(akshatha);
-
-        Person suresh = new Person();
-        suresh.setAddress("SFO");
-        suresh.setAge(57);
-        suresh.setName("suresh");
-        people.add(suresh);
         people.forEach(p -> System.out.println(p.getName().contains("achalkar")));
-        vikas.setDependents(Arrays.asList(suresh,akshatha));
-        suresh.setDependents(Arrays.asList(vikas,akshatha));
-        shankar.setDependents(Arrays.asList(suvarna,karthik,vikas));
+        
+        shankar.setDependents(Arrays.asList(suvarna,karthik));
         karthik.setDependents(Arrays.asList(shankar, suvarna));
 
 
